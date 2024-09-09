@@ -1,0 +1,41 @@
+
+/* PARTE DE CIMA DO JOGO */
+.upper-game
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.upper-container
+{
+    height: 400px;
+}
+
+.imagem-forca
+{
+    height: 100%;
+}
+/* ===================== */
+
+/* PARTE DE BAIXO DO JOGO */
+.bottom-game 
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.letters-button
+{
+    margin: 8px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.303);
+    font-size: 20px;
+}
+/* ===================== */
