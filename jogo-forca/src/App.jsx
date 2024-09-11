@@ -3,6 +3,7 @@ import palavras from "./palavras";
 import Jogo from "./components/Jogo";
 import Letras from "./components/Letras";
 import alfabeto from "./alfabeto";
+import Chute from "./components/Chute";
 
 
 export default function App() {
@@ -11,17 +12,22 @@ export default function App() {
   const [palavraJogo, setPalavraJogo] = useState([]);
   const [letrasUsadas, setLetrasUsadas] = useState(alfabeto);
   const [corPalavra, setCorPalavra] = useState("preto");
+  const [textoInput, setTextoInput] = useState("");
+  const [desabilitarInput, setDesabilitarInput] = useState(true);
 
   function iniciarJogo() {
     setErros(0);
     setLetrasUsadas([]);
-    setCorPalavra("preto");
+    setCorPalavra("preto"); 
+    setTextoInput("");
+    setDesabilitarInput(false);
     sortearPalavra();
   }
 
   function finalizarJogo() {
     setPalavraJogo(palavraEscolhida);
     setLetrasUsadas(alfabeto);
+    setDesabilitarInput(true);
   }
 
   function sortearPalavra() {
@@ -71,6 +77,19 @@ export default function App() {
     }
   }
 
+  function chutarPalavra() {
+    let palavraString = "";
+    palavraEscolhida.forEach((letra) => palavraString += letra);
+
+    if (palavraString === textoInput) {
+      setCorPalavra("verde");
+    } else {
+      setCorPalavra("vermelho");
+      setErros(6)
+    }
+    finalizarJogo()
+  }
+
   return (
     <div className="container-tela">
       <Jogo 
@@ -82,6 +101,12 @@ export default function App() {
       <Letras 
         letrasUsadas={letrasUsadas}
         clicarLetra={clicarLetra}
+      />
+      <Chute 
+        textoInput={textoInput}
+        setTextoInput={setTextoInput}
+        desabilitarInput={desabilitarInput}
+        chutarPalavra={chutarPalavra}
       />
     </div>
   )
