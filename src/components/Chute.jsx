@@ -1,4 +1,4 @@
-export default function Chute(textoInput, setTextoInput, desabilitarInput, chutarPalavra) {
+export default function Chute({ textoInput, setTextoInput, desabilitarInput, chutarPalavra }) {
     return (
 
         <div className="container-input">
