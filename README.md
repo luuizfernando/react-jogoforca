@@ -75,6 +75,6 @@ The game will be available at `http://localhost:3000`.
 
 ## 👤 Developer
 
-Developed by [Luiz Fernando](https://github.com/seu-usuario). Feel free to get in touch and contribute!
+Developed by [Luiz Fernando](https://github.com/luizfernando2644). Feel free to get in touch and contribute!
 
 ---
