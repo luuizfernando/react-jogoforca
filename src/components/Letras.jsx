@@ -1,6 +1,6 @@
 import alfabeto from "../alfabeto";
 
-export default function Letras({letrasUsadas, clicarLetra}) {
+export default function Letras({ letrasUsadas, clicarLetra }) {
     return (
         <div>
             <div className="container-letras">

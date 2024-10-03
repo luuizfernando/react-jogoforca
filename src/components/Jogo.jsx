@@ -7,7 +7,7 @@ import forca5 from "../assets/forca5.png";
 import forca6 from "../assets/forca6.png";
 const imagens = [forca0, forca1, forca2, forca3, forca4, forca5, forca6];
 
-export default function Jogo({erros, iniciarJogo, corPalavra, palavraJogo}) {
+export default function Jogo({ erros, iniciarJogo, corPalavra, palavraJogo }) {
     return (
         <div>
             <div className="container-forca">

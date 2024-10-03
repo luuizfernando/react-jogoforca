@@ -3,7 +3,7 @@ export default function Chute(textoInput, setTextoInput, desabilitarInput, chuta
 
         <div className="container-input">
             <span>Já sei a palavra!</span>
-            <input 
+            <input
                 disabled={desabilitarInput}
                 value={textoInput}
                 onChange={(e) => setTextoInput(e.target.value)}
