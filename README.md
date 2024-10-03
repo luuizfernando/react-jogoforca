@@ -70,7 +70,7 @@ The game will be available at `http://localhost:3000`.
 - Include different difficulty levels.
 - Keyboard support for entering letters.
 - Improve responsiveness on mobile devices.
-- 
+  
 ---
 
 ## 👤 Developer
