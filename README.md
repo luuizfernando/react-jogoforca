@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Hangman 🎯
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a hangman game developed in **React**, hosted on **Vercel**. The game allows you to test your word guessing skills by completing them letter by letter. You have six chances before you lose and the game includes support for accented letters.
 
-## Available Scripts
+## 🌐 Access the game
 
-In the project directory, you can run:
+You can play online by accessing the following link:  
+[https://react-jogoforca.vercel.app](https://react-jogoforca.vercel.app)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  ## 🛠️ Technologies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React** - JavaScript library for building user interfaces.
+- **Vercel** - Fast and scalable hosting for frontend applications.
+- **JavaScript (ES6+)** - Modern language features.
+- **CSS** - Stylization of the game interface.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Features
+- **Start Game**: Allows you to start a new game with a random word.
+- **Guess Letters**: The player can select letters to try to complete the word.
+- **Guess the Word**: The player can guess the entire word if they think they know the answer.
+- **Accent Support**: Words with accents are supported, and the player does not need to enter them.
+- **Visual Feedback**: The game changes the color of the word when the player gets it right (green) or wrong (red).
+- **Game Loss**: The player loses after six mistakes, and the correct word is revealed.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎮 How to Play
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Click the button to **start the game**.
+2. Choose the letters of the alphabet displayed on the screen.
+3. The game will indicate whether the letter is present in the word.
+4. If you prefer, you can guess the entire word by filling in the text field and clicking "Chutar".
+5. If you get it wrong 6 times, the game ends and the correct word is revealed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🖥️ Running Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If you want to run the project locally, follow the steps below:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    git clone https://github.com/seu-usuario/react-jogoforca.git
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
 
-## Learn More
+    ```bash
+    cd react-jogoforca
+    npm install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Run the project:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+    npm start
+    ```
 
-### Code Splitting
+The game will be available at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📝 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Include different difficulty levels.
+- Keyboard support for entering letters.
+- Improve responsiveness on mobile devices.
+- 
+---
 
-### Making a Progressive Web App
+## 👤 Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Developed by [Luiz Fernando](https://github.com/seu-usuario). Feel free to get in touch and contribute!
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
